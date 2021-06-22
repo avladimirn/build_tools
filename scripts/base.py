@@ -550,6 +550,9 @@ def git_update(repo, is_no_errors=False, is_current_dir=False, git_owner=""):
   if config.option("git-protocol") == "ssh":
     url = "git@github.com:" + owner + "/" + repo + ".git"
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 7ce465e (owner is used on ssh protocol too)
+=======
 >>>>>>> 7ce465e (owner is used on ssh protocol too)
 =======
 >>>>>>> 7ce465e (owner is used on ssh protocol too)
