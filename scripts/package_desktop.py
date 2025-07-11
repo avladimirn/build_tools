@@ -118,7 +118,7 @@ def make_inno():
 
   utils.log_h2("desktop inno build")
   if xp:
-    ret = utils.ps1("make_inno.ps1", args + ["-Target", "xp"], verbose=True)
+    ret = utils.ps1("make_inno.ps1", args + ["-Target", "xp"] + ["-TimestampServer", "http://timestamp.comodoca.com/authenticode"], verbose=True)
   else:
     ret = utils.ps1("make_inno.ps1", args, verbose=True)
   utils.set_summary("desktop inno build", ret)
